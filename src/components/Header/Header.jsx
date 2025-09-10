@@ -1,0 +1,24 @@
+import "./Header.css";
+const Header = () => {
+  return (
+    <div className="w-11/12 mx-auto py-6 flex justify-between items-center">
+      <div id="logo">
+        <img src="../../../public/images/logo.png" alt="" />
+      </div>
+      <div
+        id="menus"
+        className="flex justify-center items-center gap-5 text-[rgba(19,19,19)] opacity-70"
+      >
+        <a href="">Home</a>
+        <a href="">Fixture</a>
+        <a href="">Teams</a>
+        <a href="">Schedules</a>
+        <div className="font-semibold border border-[rgba(19,19,19,0.1)] rounded-lg px-5 py-4">
+          <span>0</span> <span>Coin</span> <i class="fa-solid fa-coins"></i>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Header;

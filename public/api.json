@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Virat_Kohli.jpg",
+    "role": "Batsman",
+    "batting_bowling_type": "Right-hand Bat",
+    "bidding_price": "2.1M USD"
+  },
+  {
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "image": "https://resources.pulselive.com/2025/05/29/12345-kane-williamson.jpg",
+    "role": "Batsman",
+    "batting_bowling_type": "Right-hand Bat",
+    "bidding_price": "1.7M USD"
+  },
+  {
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Babar_Azam.jpg",
+    "role": "Batsman",
+    "batting_bowling_type": "Right-hand Bat",
+    "bidding_price": "1.8M USD"
+  },
+  {
+    "name": "David Warner",
+    "country": "Australia",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/David_Warner.jpg",
+    "role": "Batsman",
+    "batting_bowling_type": "Left-hand Bat",
+    "bidding_price": "1.5M USD"
+  },
+  {
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Rashid_Khan.jpg",
+    "role": "Bowler",
+    "batting_bowling_type": "Right-arm Leg Spin",
+    "bidding_price": "2.0M USD"
+  },
+  {
+    "name": "Ben Stokes",
+    "country": "England",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Ben_Stokes.jpg",
+    "role": "All-rounder",
+    "batting_bowling_type": "Left-hand Bat / Right-arm Medium Fast",
+    "bidding_price": "2.2M USD"
+  },
+  {
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Shakib_Al_Hasan.jpg",
+    "role": "All-rounder",
+    "batting_bowling_type": "Left-hand Bat / Left-arm Orthodox Spin",
+    "bidding_price": "1.9M USD"
+  },
+  {
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Jasprit_Bumrah.jpg",
+    "role": "Bowler",
+    "batting_bowling_type": "Right-arm Fast",
+    "bidding_price": "2.3M USD"
+  },
+  {
+    "name": "Steve Smith",
+    "country": "Australia",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Steve_Smith.jpg",
+    "role": "Batsman",
+    "batting_bowling_type": "Right-hand Bat",
+    "bidding_price": "1.6M USD"
+  },
+  {
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Trent_Boult.jpg",
+    "role": "Bowler",
+    "batting_bowling_type": "Left-arm Fast Medium",
+    "bidding_price": "1.4M USD"
+  }
+]
