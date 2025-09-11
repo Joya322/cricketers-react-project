@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="w-11/12 mx-auto bg-[black] rounded-3xl">
+    <div className="w-11/12 mx-auto bg-[black] rounded-3xl mt-32">
       <div className="bg-[url(/images/bg-shadow.png)] bg-no-repeat bg-cover rounded-3xl flex flex-col justify-center items-center gap-6 py-14">
         <img src="/images/banner-main.png" alt="" />
         <h2 className="font-bold text-4xl text-white">
