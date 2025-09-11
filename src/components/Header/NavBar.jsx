@@ -1,10 +1,10 @@
 import "./Header.css";
 const NavBar = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-white/50">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-white/70">
       <nav className="w-11/12 mx-auto py-6 flex justify-between items-center">
         <div id="logo">
-          <img src="../../../public/images/logo.png" alt="" />
+          <img src="/images/logo.png" alt="" />
         </div>
         <div
           id="menus"

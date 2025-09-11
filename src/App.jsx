@@ -4,6 +4,7 @@ import Banner from "./components/Header/Banner";
 import NavBar from "./components/Header/NavBar";
 import Cards from "./components/Main/Cards/Cards";
 import SelectionToggler from "./components/Main/SelectionToggler/SelectionToggler";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [cricketers, setCricketers] = useState([]);
@@ -19,8 +20,11 @@ function App() {
     <>
       <NavBar />
       <Banner />
+      {/* main */}
       <SelectionToggler cricketers={cricketers} />
       <Cards cricketers={cricketers} />
+      {/* footer */}
+      <Footer/>
     </>
   );
 }

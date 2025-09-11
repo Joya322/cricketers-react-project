@@ -5,16 +5,16 @@ const Cards = ({ cricketers }) => {
   //   console.log(cricketers);
 
   return (
-    <div className="w-11/12 mx-auto py-5">
-      {/* all players */}
-      {/* <div className="grid grid-cols-3 gap-6">
+    <div className="w-11/12 mx-auto pt-5 pb-[300px]">
+      {/* all players section */}
+      <div className="grid grid-cols-3 gap-6">
         {cricketers.map((cricketer, i) => (
           <Card cricketer={cricketer} key={i} />
         ))}
-      </div> */}
+      </div>
 
-      {/* selected players */}
-      <div className="flex flex-col justify-center gap-6 ">
+      {/* selected players section */}
+      <div className="flex flex-col justify-center gap-6 hidden">
         {cricketers.map((cricketer, i) => (
           <SelectedCricketers key={i} cricketer={cricketer} />
         ))}
