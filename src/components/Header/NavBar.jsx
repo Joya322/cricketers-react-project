@@ -1,5 +1,5 @@
 import "./Header.css";
-const Header = () => {
+const NavBar = () => {
   return (
     <div className="w-11/12 mx-auto py-6 flex justify-between items-center">
       <div id="logo">
@@ -21,4 +21,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;
