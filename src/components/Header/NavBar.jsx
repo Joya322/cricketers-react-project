@@ -15,7 +15,7 @@ const NavBar = () => {
           <a href="">Teams</a>
           <a href="">Schedules</a>
           <div className="font-semibold border border-[rgba(19,19,19,0.1)] rounded-lg px-5 py-4">
-            <span>0</span> <span>Coin</span>{" "}
+            <span id="coin">0</span> <span>Coin</span>{" "}
             <i className="fa-solid fa-coins"></i>
           </div>
         </div>

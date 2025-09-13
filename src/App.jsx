@@ -15,11 +15,21 @@ function App() {
       .then((data) => setCricketers(data));
   }, []);
   // console.log(cricketers);
+  // console.log(coin);
+
+  // add coin function
+  const handleAddCoin = () => {
+    const coinValue = document.getElementById("coin");
+    const prevValue = parseFloat(coinValue.innerText);
+    const newValue = prevValue + 100000;
+    coinValue.innerText = newValue;
+
+  }
 
   return (
     <>
       <NavBar />
-      <Banner />
+      <Banner handleAddCoin={handleAddCoin} />
       {/* main */}
       <SelectionToggler cricketers={cricketers} />
       <Cards cricketers={cricketers} />

@@ -1,4 +1,4 @@
-const Banner = () => {
+const Banner = ({handleAddCoin}) => {
   return (
     <div className="w-11/12 mx-auto bg-[black] rounded-3xl mt-32">
       <div className="bg-[url(/images/bg-shadow.png)] bg-no-repeat bg-cover rounded-3xl flex flex-col justify-center items-center gap-6 py-14 text-center">
@@ -10,7 +10,7 @@ const Banner = () => {
           Beyond Boundaries Beyond Limits
         </p>
         <div className="border border-[rgba(231,254,41,1)] inline-block rounded-xl bg-[rgba(255,255,255,.1)]">
-          <button className="font-bold px-5 py-3 bg-[rgba(231,254,41,1)] rounded-xl m-2">
+          <button onClick={handleAddCoin} className="font-bold px-5 py-3 bg-[rgba(231,254,41,1)] rounded-xl m-2">
             Claim Free Credit
           </button>
         </div>
