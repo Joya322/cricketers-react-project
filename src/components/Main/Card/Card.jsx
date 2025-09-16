@@ -41,7 +41,7 @@ const Card = ({ cricketer, handleCricketersSelection }) => {
 
       {/* price */}
       <div className="flex justify-between items-center">
-        <p className="font-medium">
+        <p className="price font-medium">
           Price: <i className="fa-solid fa-dollar-sign"></i>
           {bidding_price}
         </p>

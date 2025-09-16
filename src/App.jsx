@@ -11,6 +11,7 @@ function App() {
   const [isSelected, setIsSelected] = useState(false);
   const [isAvailable, setIsAvailable] = useState(true);
   const [selectedCricketersList, setSelectedCricketersList] = useState([]);
+  const [coin, setCoin] = useState(0);
 
   const totalSelectedCricketers = selectedCricketersList.length;
 
@@ -24,12 +25,11 @@ function App() {
 
   // add coin function
   const handleAddCoin = () => {
-    const coinValue = document.getElementById("coin");
-    const prevValue = parseFloat(coinValue.innerText);
-    const newValue = prevValue + 100000;
-    coinValue.innerText = newValue;
+    const newValue = coin + 10000000;
+    setCoin(newValue);
   };
 
+  // handle available cricketers or selected cricketers on click selected toggler
   const handleSelectedCricketers = () => {
     setIsSelected(true);
     setIsAvailable(false);
@@ -41,6 +41,7 @@ function App() {
       .classList.add("hidden");
   };
 
+  // handle available cricketers or selected cricketers on click available toggler
   const handleAvailableCricketers = () => {
     setIsAvailable(true);
     setIsSelected(false);
@@ -52,14 +53,29 @@ function App() {
       .classList.remove("hidden");
   };
 
+  // choose player button
   const handleCricketersSelection = (newCricketer) => {
+
+    const biddingPrice = parseFloat(newCricketer.bidding_price);
+
+    // console.log(prevValue, biddingPrice);
+
+    if (coin <= biddingPrice) {
+      alert("You don't have enough coin");
+      return;
+    }
+
     const newCricketerList = [...selectedCricketersList, newCricketer];
     setSelectedCricketersList(newCricketerList);
+
+    // adjust coin after player choose
+    const newValue = coin - biddingPrice;
+    setCoin(newValue);
   };
 
   return (
     <>
-      <NavBar />
+      <NavBar coin={coin} />
       <Banner handleAddCoin={handleAddCoin} />
       {/* main */}
       <SelectionToggler

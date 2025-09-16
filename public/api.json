@@ -5,7 +5,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Virat_Kohli.jpg",
     "role": "Batsman",
     "batting_bowling_type": "Right-hand Bat / Right-arm Medium",
-    "bidding_price": "3.5M USD"
+    "bidding_price": "3500000"
   },
   {
     "name": "Babar Azam",
@@ -13,7 +13,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Babar_azam_2023.jpg",
     "role": "Batsman",
     "batting_bowling_type": "Right-hand Bat / Right-arm Offbreak",
-    "bidding_price": "1.6M USD"
+    "bidding_price": "1600000"
   },
   {
     "name": "David Warner",
@@ -21,7 +21,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/David_Warner.jpg",
     "role": "Batsman",
     "batting_bowling_type": "Left-hand Bat / Right-arm Offbreak",
-    "bidding_price": "2.0M USD"
+    "bidding_price": "2000000"
   },
   {
     "name": "Rashid Khan",
@@ -29,7 +29,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/71/Rashid_Khan.jpg",
     "role": "Bowler",
     "batting_bowling_type": "Right-hand Bat / Right-arm Legbreak",
-    "bidding_price": "2.5M USD"
+    "bidding_price": "2500000"
   },
   {
     "name": "Ben Stokes",
@@ -37,7 +37,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/BEN_STOKES_%2811704837023%29_%28cropped%29.jpg",
     "role": "All-rounder",
     "batting_bowling_type": "Left-hand Bat / Right-arm Medium Fast",
-    "bidding_price": "2.8M USD"
+    "bidding_price": "2800000"
   },
   {
     "name": "Kane Williamson",
@@ -45,7 +45,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Kane_Williamson.jpg",
     "role": "Batsman",
     "batting_bowling_type": "Right-hand Bat / Right-arm Offbreak",
-    "bidding_price": "1.4M USD"
+    "bidding_price": "1400000"
   },
   {
     "name": "Shakib Al Hasan",
@@ -53,7 +53,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Shakib_Al_Hasan_%281%29.jpg",
     "role": "All-rounder",
     "batting_bowling_type": "Left-hand Bat / Left-arm Orthodox",
-    "bidding_price": "1.2M USD"
+    "bidding_price": "1200000"
   },
   {
     "name": "Jasprit Bumrah",
@@ -61,7 +61,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Jasprit_Bumrah.jpg",
     "role": "Bowler",
     "batting_bowling_type": "Right-hand Bat / Right-arm Fast",
-    "bidding_price": "2.2M USD"
+    "bidding_price": "2200000"
   },
   {
     "name": "Steve Smith",
@@ -69,7 +69,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Steve_Smith.jpg",
     "role": "Batsman",
     "batting_bowling_type": "Right-hand Bat / Right-arm Legbreak",
-    "bidding_price": "1.9M USD"
+    "bidding_price": "1900000"
   },
   {
     "name": "Trent Boult",
@@ -77,7 +77,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Trent_Boult.jpg",
     "role": "Bowler",
     "batting_bowling_type": "Left-hand Bat / Left-arm Fast",
-    "bidding_price": "1.1M USD"
+    "bidding_price": "1100000"
   },
   {
     "name": "Joe Root",
@@ -85,7 +85,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/JOE_ROOT_%2811705083444%29.jpg",
     "role": "Batsman",
     "batting_bowling_type": "Right-hand Bat / Right-arm Offbreak",
-    "bidding_price": "1.5M USD"
+    "bidding_price": "1500000"
   },
   {
     "name": "Andre Russell",
@@ -93,6 +93,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Andre_Russell.jpg",
     "role": "All-rounder",
     "batting_bowling_type": "Right-hand Bat / Right-arm Fast",
-    "bidding_price": "2.0M USD"
+    "bidding_price": "2000000 USD"
   }
 ]
