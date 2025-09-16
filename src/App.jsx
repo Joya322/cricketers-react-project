@@ -91,6 +91,14 @@ function App() {
       return;
     }
 
+    if (totalSelectedCricketers >= 6) {
+      toast.warning("You already select 6 players", {
+        position: "top-center",
+        closeOnClick: true,
+      });
+      return;
+    }
+
     const newCricketerList = [...selectedCricketersList, newCricketer];
     setSelectedCricketersList(newCricketerList);
 
