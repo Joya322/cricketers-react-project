@@ -1,5 +1,10 @@
-const SelectedCricketers = ({ selectedCricketer }) => {
+const SelectedCricketers = ({
+  selectedCricketer,
+  id,
+  handleDeleteCricketer,
+}) => {
   const { name, image, batting_bowling_type } = selectedCricketer;
+  // console.log(selectedCricketer.i);
   return (
     <div className="flex justify-between items-center p-6 border border-black/10 rounded-2xl">
       <div className="flex justify-center items-center gap-6">
@@ -15,7 +20,13 @@ const SelectedCricketers = ({ selectedCricketer }) => {
         </div>
       </div>
       <div>
-        <i className="fa-regular fa-trash-can"></i>
+        <i
+          id={`delete-selected-cricketer${id}`}
+          onClick={() => {
+            handleDeleteCricketer(id);
+          }}
+          className="fa-regular fa-trash-can"
+        ></i>
       </div>
     </div>
   );

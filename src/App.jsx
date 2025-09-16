@@ -55,7 +55,6 @@ function App() {
 
   // choose player button
   const handleCricketersSelection = (newCricketer) => {
-
     const biddingPrice = parseFloat(newCricketer.bidding_price);
 
     // console.log(prevValue, biddingPrice);
@@ -71,6 +70,16 @@ function App() {
     // adjust coin after player choose
     const newValue = coin - biddingPrice;
     setCoin(newValue);
+  };
+
+  // delete cricketer button
+  const handleDeleteCricketer = (id) => {
+    // console.log(selectedCricketersList[0]);
+    const newCricketerList = selectedCricketersList.filter(
+      (_, idx) => idx !== id
+    );
+    setSelectedCricketersList(newCricketerList);
+    // console.log(id);
   };
 
   return (
@@ -92,6 +101,7 @@ function App() {
         isAvailable={isAvailable}
         handleCricketersSelection={handleCricketersSelection}
         selectedCricketersList={selectedCricketersList}
+        handleDeleteCricketer={handleDeleteCricketer}
       />
       {/* footer */}
       <Footer />

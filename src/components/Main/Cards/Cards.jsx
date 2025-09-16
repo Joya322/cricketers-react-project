@@ -7,6 +7,7 @@ const Cards = ({
   isAvailable,
   handleCricketersSelection,
   selectedCricketersList,
+  handleDeleteCricketer,
 }) => {
   //   console.log(cricketers);
 
@@ -20,7 +21,9 @@ const Cards = ({
               {selectedCricketersList.map((selectedCricketer, i) => (
                 <SelectedCricketers
                   key={i}
+                  id={i}
                   selectedCricketer={selectedCricketer}
+                  handleDeleteCricketer={handleDeleteCricketer}
                 />
               ))}
 
