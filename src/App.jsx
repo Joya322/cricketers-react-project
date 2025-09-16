@@ -5,6 +5,7 @@ import NavBar from "./components/Header/NavBar";
 import Cards from "./components/Main/Cards/Cards";
 import SelectionToggler from "./components/Main/SelectionToggler/SelectionToggler";
 import Footer from "./components/Footer/Footer";
+import { ToastContainer, toast } from "react-toastify";
 
 function App() {
   const [cricketers, setCricketers] = useState([]);
@@ -53,6 +54,18 @@ function App() {
       .classList.remove("hidden");
   };
 
+  // handle available cricketers or selected cricketers on click add moore button
+  const handleAddMorePlayerButton = () => {
+    setIsAvailable(true);
+    setIsSelected(false);
+    document
+      .getElementById("selected-cricketers-title")
+      .classList.add("hidden");
+    document
+      .getElementById("available-cricketers-title")
+      .classList.remove("hidden");
+  };
+
   // choose player button
   const handleCricketersSelection = (newCricketer) => {
     const biddingPrice = parseFloat(newCricketer.bidding_price);
@@ -60,7 +73,11 @@ function App() {
     // console.log(prevValue, biddingPrice);
 
     if (coin <= biddingPrice) {
-      alert("You don't have enough coin");
+      // alert("You don't have enough coin");
+      toast.warning("You don't have enough coin", {
+        position: "top-center",
+        closeOnClick: true,
+      });
       return;
     }
 
@@ -84,6 +101,7 @@ function App() {
 
   return (
     <>
+      <ToastContainer />
       <NavBar coin={coin} />
       <Banner handleAddCoin={handleAddCoin} />
       {/* main */}
@@ -102,6 +120,7 @@ function App() {
         handleCricketersSelection={handleCricketersSelection}
         selectedCricketersList={selectedCricketersList}
         handleDeleteCricketer={handleDeleteCricketer}
+        handleAddMorePlayerButton={handleAddMorePlayerButton}
       />
       {/* footer */}
       <Footer />

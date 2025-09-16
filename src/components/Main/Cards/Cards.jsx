@@ -8,6 +8,7 @@ const Cards = ({
   handleCricketersSelection,
   selectedCricketersList,
   handleDeleteCricketer,
+  handleAddMorePlayerButton,
 }) => {
   //   console.log(cricketers);
 
@@ -29,7 +30,10 @@ const Cards = ({
 
               {/* add more button */}
               <div className="border border-black rounded-xl bg-[rgba(255,255,255,.05)] self-start">
-                <button className="font-bold px-5 py-3 bg-[rgba(231,254,41,1)] rounded-xl m-2 text-base">
+                <button
+                  onClick={handleAddMorePlayerButton}
+                  className="font-bold px-5 py-3 bg-[rgba(231,254,41,1)] rounded-xl m-2 text-base"
+                >
                   Add More Player
                 </button>
               </div>
