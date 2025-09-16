@@ -1,4 +1,4 @@
-const Card = ({ cricketer, handlePlayerSelection }) => {
+const Card = ({ cricketer, handleCricketersSelection }) => {
   const { name, image, country, bidding_price, batting_bowling_type, role } =
     cricketer;
   return (
@@ -46,7 +46,9 @@ const Card = ({ cricketer, handlePlayerSelection }) => {
           {bidding_price}
         </p>
         <button
-          onClick={handlePlayerSelection}
+          onClick={() => {
+            handleCricketersSelection(cricketer);
+          }}
           className="text-sm px-4 py-2 border border-[rgba(19,19,19,0.1)] rounded-lg"
         >
           Choose Player

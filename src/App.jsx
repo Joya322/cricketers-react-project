@@ -8,7 +8,11 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   const [cricketers, setCricketers] = useState([]);
-  const [isSelected, setIsSelected] = useState(false)
+  const [isSelected, setIsSelected] = useState(false);
+  const [isAvailable, setIsAvailable] = useState(true);
+  const [selectedCricketersList, setSelectedCricketersList] = useState([]);
+
+  const totalSelectedCricketers = selectedCricketersList.length;
 
   useEffect(() => {
     fetch("api.json")
@@ -27,7 +31,30 @@ function App() {
   };
 
   const handleSelectedCricketers = () => {
-    setIsSelected(true)
+    setIsSelected(true);
+    setIsAvailable(false);
+    document
+      .getElementById("selected-cricketers-title")
+      .classList.remove("hidden");
+    document
+      .getElementById("available-cricketers-title")
+      .classList.add("hidden");
+  };
+
+  const handleAvailableCricketers = () => {
+    setIsAvailable(true);
+    setIsSelected(false);
+    document
+      .getElementById("selected-cricketers-title")
+      .classList.add("hidden");
+    document
+      .getElementById("available-cricketers-title")
+      .classList.remove("hidden");
+  };
+
+  const handleCricketersSelection = (newCricketer) => {
+    const newCricketerList = [...selectedCricketersList, newCricketer];
+    setSelectedCricketersList(newCricketerList);
   };
 
   return (
@@ -38,8 +65,17 @@ function App() {
       <SelectionToggler
         cricketers={cricketers}
         handleSelectedCricketers={handleSelectedCricketers}
+        handleAvailableCricketers={handleAvailableCricketers}
+        isSelected={isSelected}
+        isAvailable={isAvailable}
+        totalSelectedCricketers={totalSelectedCricketers}
       />
-      <Cards cricketers={cricketers} isSelected={isSelected} />
+      <Cards
+        cricketers={cricketers}
+        isSelected={isSelected}
+        isAvailable={isAvailable}
+        handleCricketersSelection={handleCricketersSelection}
+      />
       {/* footer */}
       <Footer />
     </>

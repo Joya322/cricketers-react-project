@@ -1,7 +1,12 @@
 import Card from "../Card/Card";
 import SelectedCricketers from "../Selected/SelectedCricketers";
 
-const Cards = ({ cricketers, isSelected }) => {
+const Cards = ({
+  cricketers,
+  isSelected,
+  isAvailable,
+  handleCricketersSelection,
+}) => {
   //   console.log(cricketers);
 
   return (
@@ -25,14 +30,19 @@ const Cards = ({ cricketers, isSelected }) => {
           );
         }
         // all players section
-
-        return (
-          <div className="grid grid-cols-3 gap-6">
-            {cricketers.map((cricketer, i) => (
-              <Card key={i} cricketer={cricketer} />
-            ))}
-          </div>
-        );
+        if (isAvailable) {
+          return (
+            <div className="grid grid-cols-3 gap-6">
+              {cricketers.map((cricketer, i) => (
+                <Card
+                  key={i}
+                  cricketer={cricketer}
+                  handleCricketersSelection={handleCricketersSelection}
+                />
+              ))}
+            </div>
+          );
+        }
       })()}
     </div>
   );
