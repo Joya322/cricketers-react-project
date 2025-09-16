@@ -1,5 +1,4 @@
 const SelectionToggler = ({
-  cricketers,
   handleSelectedCricketers,
   handleAvailableCricketers,
   isAvailable,

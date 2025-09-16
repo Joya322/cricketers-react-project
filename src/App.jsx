@@ -21,8 +21,6 @@ function App() {
       .then((res) => res.json())
       .then((data) => setCricketers(data));
   }, []);
-  // console.log(cricketers);
-  // console.log(coin);
 
   // add coin function
   const handleAddCoin = () => {
@@ -70,10 +68,7 @@ function App() {
   const handleCricketersSelection = (newCricketer) => {
     const biddingPrice = parseFloat(newCricketer.bidding_price);
 
-    // console.log(prevValue, biddingPrice);
-
     if (coin <= biddingPrice) {
-      
       toast.warning("You don't have enough coin", {
         position: "top-center",
         closeOnClick: true,
@@ -81,7 +76,7 @@ function App() {
       return;
     }
 
-    const isMatch = selectedCricketersList.includes(newCricketer)
+    const isMatch = selectedCricketersList.includes(newCricketer);
 
     if (isMatch) {
       toast.warning("Player already selected", {
@@ -109,7 +104,6 @@ function App() {
 
   // delete cricketer button
   const handleDeleteCricketer = (id) => {
-    // console.log(selectedCricketersList[0]);
     const newCricketerList = selectedCricketersList.filter(
       (_, idx) => idx !== id
     );
@@ -118,7 +112,6 @@ function App() {
       position: "top-center",
       closeOnClick: true,
     });
-    // console.log(id);
   };
 
   return (
@@ -128,7 +121,6 @@ function App() {
       <Banner handleAddCoin={handleAddCoin} />
       {/* main */}
       <SelectionToggler
-        cricketers={cricketers}
         handleSelectedCricketers={handleSelectedCricketers}
         handleAvailableCricketers={handleAvailableCricketers}
         isSelected={isSelected}

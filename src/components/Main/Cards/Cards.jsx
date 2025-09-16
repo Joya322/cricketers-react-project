@@ -10,8 +10,6 @@ const Cards = ({
   handleDeleteCricketer,
   handleAddMorePlayerButton,
 }) => {
-  //   console.log(cricketers);
-
   return (
     <div className="w-11/12 mx-auto pt-5 pb-[300px]">
       {(() => {
