@@ -73,8 +73,18 @@ function App() {
     // console.log(prevValue, biddingPrice);
 
     if (coin <= biddingPrice) {
-      // alert("You don't have enough coin");
+      
       toast.warning("You don't have enough coin", {
+        position: "top-center",
+        closeOnClick: true,
+      });
+      return;
+    }
+
+    const isMatch = selectedCricketersList.includes(newCricketer)
+
+    if (isMatch) {
+      toast.warning("Player already selected", {
         position: "top-center",
         closeOnClick: true,
       });
