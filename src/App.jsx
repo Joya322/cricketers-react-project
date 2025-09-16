@@ -106,6 +106,10 @@ function App() {
       (_, idx) => idx !== id
     );
     setSelectedCricketersList(newCricketerList);
+    toast.success("Player removed from selected list", {
+      position: "top-center",
+      closeOnClick: true,
+    });
     // console.log(id);
   };
 

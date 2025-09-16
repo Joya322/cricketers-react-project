@@ -12,7 +12,7 @@ const SelectionToggler = ({
         Available Players
       </h3>
       <h3 id="selected-cricketers-title" className="font-bold text-3xl hidden">
-        Selected Player ({totalSelectedCricketers}/{cricketers.length})
+        Selected Player ({totalSelectedCricketers}/{6})
       </h3>
       <div className="border border-[rgba(19,19,19,0.1)] rounded-xl">
         <button
