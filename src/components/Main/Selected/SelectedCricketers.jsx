@@ -1,5 +1,5 @@
-const SelectedCricketers = ({ cricketer }) => {
-  const { name, image, batting_bowling_type } = cricketer;
+const SelectedCricketers = ({ selectedCricketer }) => {
+  const { name, image, batting_bowling_type } = selectedCricketer;
   return (
     <div className="flex justify-between items-center p-6 border border-black/10 rounded-2xl">
       <div className="flex justify-center items-center gap-6">

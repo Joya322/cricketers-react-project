@@ -91,6 +91,7 @@ function App() {
         isSelected={isSelected}
         isAvailable={isAvailable}
         handleCricketersSelection={handleCricketersSelection}
+        selectedCricketersList={selectedCricketersList}
       />
       {/* footer */}
       <Footer />

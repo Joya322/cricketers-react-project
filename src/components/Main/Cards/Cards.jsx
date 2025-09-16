@@ -6,18 +6,22 @@ const Cards = ({
   isSelected,
   isAvailable,
   handleCricketersSelection,
+  selectedCricketersList,
 }) => {
   //   console.log(cricketers);
 
   return (
     <div className="w-11/12 mx-auto pt-5 pb-[300px]">
       {(() => {
+        // selected players section
         if (isSelected) {
-          // selected players section
           return (
             <div className=" flex-col justify-center gap-6 flex">
-              {cricketers.map((cricketer, i) => (
-                <SelectedCricketers key={i} cricketer={cricketer} />
+              {selectedCricketersList.map((selectedCricketer, i) => (
+                <SelectedCricketers
+                  key={i}
+                  selectedCricketer={selectedCricketer}
+                />
               ))}
 
               {/* add more button */}
