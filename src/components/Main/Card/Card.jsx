@@ -2,11 +2,11 @@ const Card = ({ cricketer, handleCricketersSelection }) => {
   const { name, image, country, bidding_price, batting_bowling_type, role } =
     cricketer;
   return (
-    <div className="w-[424px] flex flex-col justify-center gap-6 border border-black/20 p-6 rounded-2xl">
+    <div className="flex flex-col justify-center gap-6 border border-black/20 p-6 rounded-2xl">
       {/* image */}
 
       <img
-        className="w-full h-[240px] object-cover object-center rounded-2xl"
+        className="w-full h-[300px] object-cover object-top rounded-2xl"
         src={image}
         alt=""
       />
