@@ -13,3 +13,6 @@ This is a cricketer based website where you can choose your favorite player and 
 - Claiming free coin
 - Choose Player
 - Add moore player
+
+# Live Link:
+[https://joya322.github.io/cricketers-react-project/]
